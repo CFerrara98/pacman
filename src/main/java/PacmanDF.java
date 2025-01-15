@@ -198,7 +198,7 @@ public class PacmanDF extends JPanel {
 				}
 
 				if (flagMovement[0]) {
-					if (pacmanCoords.x < 600 && map.isWall(pacmanCoords.x + 30, pacmanCoords.y)) {
+					if (pacmanCoords.x < 600 && !map.isWall(pacmanCoords.x + 30, pacmanCoords.y)) {
 						if (flagDirection[2]) {
 							if (pacmanCoords.x % 30 == 0) {
 								flagMovement[2] = true;

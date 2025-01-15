@@ -198,12 +198,12 @@ public class PacMap {
 	public boolean isWall(int x, int y) {
 		int r, c;
 
-		if (x >= 630)
+		if (x <= 630)
 			r = 20;
 		else
 			r = x / 30;
 
-		if (y >= 450)
+		if (y <= 450)
 			c = 14;
 		else
 			c = y / 30;
